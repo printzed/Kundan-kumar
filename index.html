@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintZed Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Add custom styles for responsive layout */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .company-name {
+            color: whitesmoke;
+            font-size: 1.5rem;
+        }
+
+        .qr-code {
+            cursor: pointer;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 1.2rem;
+            }
+
+            .whatsapp-logo {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <!-- Header with Logo and Company Name -->
+    <header class="header">
+        <h1 class="company-name">
+            <span>
+                <img src="logoo.png" alt="Intellicon International Trading LLC" class="logo" style="height: 40px; width: 40px;">
+            </span>
+            Intellicon International Trading LLC
+        </h1>
+    </header>
+
+    <div class="image-container">
+        <div class="gradient"></div>
+        <div class="gradient2"></div>
+        <img class="banner-image" alt="">
+        <h1 class="title">Mr.Kundan Kumar</h1><br>
+        <small class="sample">Marketing Project Manager</small><br>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">QR CODE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="path/to/qr-code.jpg" alt="QR Code" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-us">
+            <div class="content">
+                <h3 class="about">Contact us</h3>
+                <p class="para">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="currentColor" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3M6.025 9l1.65-1.65L7.25 5H5.025q.125 1.025.35 2.025T6.025 9m8.95 8.95q.975.425 1.988.675T19 18.95v-2.2l-2.35-.475zm0 0" />
+                    </svg>
+                    : +971 52 275 5807
+                </p>
+                <p class="para">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="currentColor" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3M6.025 9l1.65-1.65L7.25 5H5.025q.125 1.025.35 2.025T6.025 9m8.95 8.95q.975.425 1.988.675T19 18.95v-2.2l-2.35-.475zm0 0" />
+                    </svg>
+                    : +971 44 106 972
+                </p>
+                <p class="para">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="currentColor" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+                    </svg>
+                    : kundan@intellicon-int.com
+                </p>
+                <p class="para">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 2048 2048">
+                        <rect width="2048" height="2048" fill="none" />
+                        <path fill="currentColor" d="M1024 0q141 0 272 36t245 103t207 160t160 208t103 245t37 272q0 141-36 272t-103 245t-160 207t-208 160t-245 103t-272 37q-141 0-272-36t-245-103t-207-160t-160-208t-103-244t-37-273q0-141 36-272t103-245t160-207t208-160T751 37t273-37m0 1920q123 0 237-32t214-90t182-141t140-181t91-214t32-238q0-123-32-237t-90-214t-141-182t-181-140t-214-91t-238-32q-123 0-237 32t-214 90t-182 141t-140 181t-91 214t-32 238q0 123 32 237t90 214t141 182t181 140t214 91t238 32m597-880l48-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74zm-464-144h75l-85 256h-75l-48-144l-48 144h-75l-85-256h75l48 144l48-144h74l48 144zm-512 0h112q33 0 59 8t45 23t28 36t10 46q0 28-10 46t-27 31t-38 18t-42 6l88 88h-92l-76-80v80h-75v-256zm64 134q18 0 29-9t12-25q0-16-11-25t-30-9H704v68h77zm-378-134h75v256h-75v-256zm-96 0l-32 98l-34-98h-77v256h75v-155l42 117h60l43-118v156h74v-256h-80z" />
+                    </svg>
+                    : Al Barsha, Dubai, U A E
+
+                </p>
+                <center><a href="addtocontact.php"><button class="btn btn-dark" id="add-to-contact">Add to Contact</button></a></center>
+            </div>
+            <div class="image">
+                <a href="qrcode.html"><img src="QR.png" alt="QR Code" class="qr-code" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/971522755807" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" class="whatsapp-logo">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7ie7LrcEYZlkJ3gtflv5f8pJd2d1j6m6Hdd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12HIV5pRYsK26FoMcpRxeGxYs9UtwF24/iPBb07fmFw1Hp4l" crossorigin="anonymous"></script>
+</body>
+</html>

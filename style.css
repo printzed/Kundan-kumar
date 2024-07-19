@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.gradient, .gradient2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.gradient2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 2em;
+}
+
+.sample {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.para {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image {
+  margin-top: 20px;
+}
+
+.qr-code {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-logo {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .content {
+      flex: 1;
+      padding-right: 20px;
+  }
+
+  .image {
+      flex: 1;
+      padding-left: 20px;
+  }
+}
